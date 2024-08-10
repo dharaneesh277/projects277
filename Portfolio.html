@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="shortcut icon" href="./images/portlogoicon.png">
+</head>
+<body>
+    <section class="nvs1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/dharaneesh277">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="nvs2">
+        <div class="container text-center my-5">
+            <h1 class="userna text-center">Hi I Am Tarun</h1>
+            <h2 class="role text-center">Frontend Developer</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="prg">With a strong foundation in HTML, CSS, and JavaScript, I have honed my skills to create dynamic and responsive web pages. My expertise in HTML allows me to structure web content effectively, ensuring semantic and accessible markup. CSS is my tool for crafting visually appealing designs, where I employ advanced techniques like Flexbox and Grid for layout precision. JavaScript, the backbone of interactivity, enables me to bring websites to life with animations, dynamic content updates, and seamless user experiences. My proficiency in these languages allows me to build robust and scalable front-end applications, keeping user-centric design principles in mind. I am adept at optimizing performance and ensuring cross-browser compatibility, which enhances the overall usability of the websites I develop. My passion for continuous learning drives me to stay updated with the latest trends and technologies in web development, ensuring that I deliver modern, efficient, and visually engaging web solutions.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/portfolio_pfp_pic1-bgrm.png" alt="image" class="img-fluid rounded-circle" height="150px" width="150px">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="nvs3 py-5">
+        <div class="container">
+            <h2><header class="text-center">Programming Skills</header></h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <img src="./images/java logo.png" alt="Java Logo" class="img-fluid" height="100px" width="100px">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/html logo.png" alt="HTML Logo" class="img-fluid" height="100px" width="100px">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/css logo.png" alt="CSS Logo" class="img-fluid" height="100px" width="100px">
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <img src="./images/php logo.png" alt="PHP Logo" class="img-fluid" height="100px" width="100px">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/reactjs logo.png" alt="ReactJS Logo" class="img-fluid" height="100px" width="100px">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/nodejs logo.png" alt="NodeJS Logo" class="img-fluid" height="100px" width="100px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nvs4 py-5" id="About">
+        <div class="container">
+            <h2 class="text-center">About</h2>
+            <p class="text-center">Hello! I’m Tarun, a passionate and dedicated Front-End Developer currently pursuing a Bachelor of Engineering in Computer Science and Technology at SNS College of Engineering. With a solid academic foundation and a CGPA of 7, I am deeply committed to enhancing my skills and knowledge in the dynamic field of technology.</p>
+            <p class="text-center">My journey in front-end development has been driven by a love for creating intuitive and visually appealing user interfaces. Proficient in HTML, CSS, and JavaScript, I strive to craft seamless web experiences that are both functional and aesthetically pleasing. My expertise in UI/UX design further enables me to ensure that every project I undertake not only meets but exceeds user expectations.</p>
+            <p class="text-center">In addition to my academic and professional pursuits, I have been involved in various projects that have honed my problem-solving abilities and technical acumen. One such highlight was participating in an AI project showcase, which was a pivotal learning experience.</p>
+            <p class="text-center">Balancing academic excellence with real-world application, I am always eager to take on new challenges and collaborate on innovative projects. As I continue my educational journey and professional career, I am committed to making a significant impact in the world of web development.</p>
+        </div>
+    </section>
+
+    <section class="nvs5 py-5" id="Contact">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h3>Phone</h3>
+                    <p class="cnm">7397195082</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        document.querySelector('.abbtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+            document.getElementById('About').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
